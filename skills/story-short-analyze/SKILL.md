@@ -209,7 +209,7 @@ description: |
 |---|---|
 | 拆完了想写自己的 | 「结构看懂了，开写。用 `/story-short-write`。」 |
 | 市场方向不明确 | 「先看看短篇市场什么火。用 `/story-short-scan`。」 |
-| 发现题材更适合长篇 | 「这个设定做长篇更合适。用 `/story-long-analyze`。」 |
+| 发现题材更适合长篇 | 「这个设定做长篇更合适。用 `/story-long-scan` 看看市场，再 `/story-long-analyze` 拆解。」 |
 
 ---
 

@@ -186,6 +186,8 @@ AI写作的结尾特征：总想总结、升华、点题。
 | [references/rewrite-patterns.md](references/rewrite-patterns.md) | 需要具体改写范例时 |
 | [references/three-pass-deai.md](references/three-pass-deai.md) | 需要系统性三遍去AI润色时 |
 
+> 📚 深度参考：知识库/Skill知识包/deslop_去AI味方法论.md
+
 ---
 
 ## 下一步建议

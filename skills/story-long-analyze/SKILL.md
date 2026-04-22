@@ -224,7 +224,7 @@ description: |
 |---|---|
 | 拆完了想开始写自己的 | 「拆文够了，开书。用 `/story-long-write`。」 |
 | 觉得市场方向还不明确 | 「方向不确定，先扫个榜。用 `/story-long-scan`。」 |
-| 发现这本书更偏短篇模式 | 「这个结构更像短篇。用 `/story-short-analyze`。」 |
+| 发现这本书更偏短篇模式 | 「这个结构更像短篇。用 `/story-short-scan` 看看市场，再 `/story-short-analyze` 拆解。」 |
 
 ---
 
