@@ -1,6 +1,6 @@
 # oh-story-claudecode
 
-> 网文写作 skill 包，覆盖长篇与短篇网文的扫榜、拆文、写作、润色全流程。
+网文写作 skill 包，覆盖长篇与短篇网文的扫榜、拆文、写作、润色全流程。
 
 ---
 
@@ -16,7 +16,23 @@ npx skills add worldwonderer/oh-story-claudecode
 
 更新时重新执行同一条命令即可。
 
-### Claude Code
+### Claude Code Marketplace
+
+```bash
+# 添加 marketplace
+claude plugin marketplace add https://github.com/worldwonderer/oh-story-claudecode
+
+# 安装全部 7 个 skill
+claude plugin install story-long-write@oh-story-skills
+claude plugin install story-long-analyze@oh-story-skills
+claude plugin install story-long-scan@oh-story-skills
+claude plugin install story-short-write@oh-story-skills
+claude plugin install story-short-analyze@oh-story-skills
+claude plugin install story-short-scan@oh-story-skills
+claude plugin install story-deslop@oh-story-skills
+```
+
+### Claude Code 会话内
 
 在会话中直接告诉 Claude：
 
