@@ -2,8 +2,6 @@
 
 网文写作 skill 包，覆盖长篇与短篇网文的扫榜、拆文、写作、去AI味全流程。
 
----
-
 ## 流程总览
 
 ```mermaid
@@ -22,8 +20,6 @@ flowchart LR
     write_s --> deslop
 ```
 
----
-
 ## 安装
 
 ```bash
@@ -31,8 +27,6 @@ npx skills add worldwonderer/oh-story-claudecode
 ```
 
 更新时重新执行同一条命令即可。
-
----
 
 ## Skills
 
@@ -48,8 +42,6 @@ npx skills add worldwonderer/oh-story-claudecode
 | `browser-cdp` | `/browser-cdp` | 浏览器操控 · CDP 协议复用登录态抓取数据 |
 
 自然语言同样触发：「帮我开书」→ `story-long-write`，「这篇太 AI 了」→ `story-deslop`。
-
----
 
 ## 知识体系
 
@@ -73,27 +65,17 @@ npx skills add worldwonderer/oh-story-claudecode
 | 高级技法 | 小纲四步法 · 高潮逆推 · 双线结构 · AB 交织法 | long-write |
 | 风格模块 | 对话 · 打斗 · 智斗 · 镜头式写作 · 装逼打脸 · 白描 | long-write |
 
----
-
 ## 适用平台
 
 **长篇** 起点中文网 · 番茄小说 · 晋江文学城 · 七猫小说 · 刺猬猫
 
 **短篇** 知乎盐言故事 · 番茄短篇 · 七猫短篇
 
----
-
-## 收益说明
-
-我自己用这套 skill 写网文，月入 6000+，长篇短篇都在写。不是吹的，是真的能赚钱。
-
----
+这套 skill 现在能让我度过找工作的过渡期 :joy:，希望也能帮到有需要的朋友。
 
 ## Community
 
 [LINUX DO - The New Ideal Community](https://linux.do)
-
----
 
 ## License
 
