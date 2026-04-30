@@ -233,18 +233,15 @@ description: |
 | [references/outline-arrangement.md](references/outline-arrangement.md) | **核心参考**：大纲排布方法论+五步大纲法+故事结构分级+剧情质量控制+升级感设计+节点设计法+矛盾设计 |
 | [references/advanced-plot-techniques.md](references/advanced-plot-techniques.md) | 高级技法：小纲四步法+高潮逆推+情绪拉扯+金手指运用+对标书选择+双线结构+AB交织法 |
 | [references/hook-techniques.md](references/hook-techniques.md) | **核心参考**：钩子原理+章尾钩子13式+章首钩子7式+实战模板+段落级钩子+悬念编排+期待感理论+断期待修复 |
-| [references/opening-design.md](references/opening-design.md) | 开头设计：黄金一章法则+六大标准+开局三大基点+核心模板+开头问题诊断 |
+| [references/opening-design.md](references/opening-design.md) | **开头全流程**：黄金一章法则+六大标准+开局三大基点+核心模板+8大题材开头范例+决策树+开头规则 |
 | [references/character-design.md](references/character-design.md) | **人物全流程**：设定主角/配角/反派+人物元素提取+关系映射+动机链+群像写作+代入感构建法 |
-| [references/genre-frameworks-unified.md](references/genre-frameworks-unified.md) | **题材全流程**：题材框架+核心梗解析+事业线/爱情线设计+长篇短篇双视角 |
+| [references/genre-frameworks-unified.md](references/genre-frameworks-unified.md) | **题材全流程**：题材框架+核心梗解析+事业线/爱情线设计+微创新与差异化设计+读者心理需求+卖点偏移检验 |
 | [references/style-modules.md](references/style-modules.md) | **风格全流程**：题材风格+对话+打斗/智斗+镜头式写作+爽点释放+装逼打脸+流派特征+写作基础+白描+视角 |
 | [references/anti-ai-writing.md](references/anti-ai-writing.md) | **去AI味全流程**：预防AI痕迹+三遍去AI法+改写范例库 |
 | [references/dialogue-mastery.md](references/dialogue-mastery.md) | 对话节奏/潜台词/信息控制+对话模式数据库+弹幕技巧 |
-| [references/genre-opening-database.md](references/genre-opening-database.md) | 8大题材开头模板+真实范例+决策树 |
 | [references/emotional-arc-design.md](references/emotional-arc-design.md) | 情绪曲线设计+弧形模板+期待感管理+题材赛道策略 |
 | [references/reversal-toolkit.md](references/reversal-toolkit.md) | 反转类型+时机+误导底层路径 |
-| [references/micro-innovation.md](references/micro-innovation.md) | 题材微创新、差异化设计 |
 | [references/quality-checklist.md](references/quality-checklist.md) | 质量检查+毒点排查+常见问题速查 |
-| [references/writer-psychology.md](references/writer-psychology.md) | 写作心理建设+职业规划+码字习惯 |
 
 ---
 
