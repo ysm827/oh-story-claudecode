@@ -75,11 +75,11 @@ function extractBookList() {
   return Array.isArray(list) ? list : [];
 }
 
-/** 批量获取真实书名：用同步 XHR 请求详情页，解析 <title> 标签 */
+/** 批量获取真实书名和作者：用同步 XHR 请求详情页，解析 <title> 和作者信息 */
 function fetchRealTitles(bookIds) {
   if (!bookIds.length) return {};
   const ids = JSON.stringify(bookIds);
-  const js = "JSON.stringify((()=>{const map={};var ids=" + ids + ";ids.forEach(function(id){try{var x=new XMLHttpRequest();x.open('GET','/page/'+id,false);x.send();var m=x.responseText.match(/<title>([^<]+?)完整版/);map[id]=m?m[1]:''}catch(e){map[id]=''}});return map})())";
+  const js = "JSON.stringify((()=>{const map={};var ids=" + ids + ";ids.forEach(function(id){try{var x=new XMLHttpRequest();x.open('GET','/page/'+id,false);x.send();var tm=x.responseText.match(/<title>([^<]+?)完整版/);var am=x.responseText.match(/\"author\":\"([^\"]+)\"/);map[id]={title:tm?tm[1]:'',author:am?am[1]:''}}catch(e){map[id]={title:'',author:''}}});return map})())";
   return evalJSON(js) || {};
 }
 
@@ -189,12 +189,14 @@ function scrapeChannel(ch, type) {
 
     for (let i = 0; i < books.length; i++) {
       const b = books[i];
-      const title = titles[String(b.bookId)] || `bookId:${b.bookId}`;
+      const info = titles[String(b.bookId)] || {};
+      const title = info.title || `bookId:${b.bookId}`;
+      const author = info.author || "未知";
       lines.push(`### #${i + 1} ${title}`);
       lines.push(
-        `*${fmtStatus(b.creationStatus)} · ${fmtReads(b.read_count)} 在读 · ${fmtWords(b.wordNumber)}字*`
+        `*${author} · ${fmtStatus(b.creationStatus)} · ${fmtReads(b.read_count)} 在读 · ${fmtWords(b.wordNumber)}字*`
       );
-      lines.push(`**最近更新：** ${b.lastChapterTitle || "未知"}`);
+      lines.push(`**最新更新：** ${b.lastChapterTitle || "未知"}`);
       lines.push(`[作品页](https://fanqienovel.com/page/${b.bookId})`);
       lines.push("");
     }

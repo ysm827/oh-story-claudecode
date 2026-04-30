@@ -219,7 +219,7 @@
 |----|------|--------------------------|
 ```
 
-创建参考：`advanced-plot-techniques.md` L856 (连续性追踪与节奏管理) + L858 (热度追踪系统)
+创建参考：`advanced-plot-techniques.md` L856 (连续性追踪与节奏管理)
 
 ---
 
@@ -248,4 +248,4 @@
 |------|------|---------|
 ```
 
-创建参考：`advanced-plot-techniques.md` L856 (连续性追踪与节奏管理) + L858 (热度追踪系统)
+创建参考：`advanced-plot-techniques.md` L856 (连续性追踪与节奏管理)

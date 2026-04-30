@@ -85,7 +85,7 @@ description: |
 | 男频新书榜 | fanqienovel.com/rank/1_1_{cat_id} | 新风向信号 |
 | 女频新书榜 | fanqienovel.com/rank/0_1_{cat_id} | 新风向信号 |
 
-URL 参数：`/rank/{channel}_{type}_{cat_id}`，channel 0=女频/1=男频，type 1=新书榜/2=阅读榜。番茄有字体反爬，需用 `scripts/fanqie-rank-scraper.js`（内置字体解码，配合 browser-cdp 使用）。
+URL 参数：`/rank/{channel}_{type}_{cat_id}`，channel 0=女频/1=男频，type 1=新书榜/2=阅读榜。番茄有字体反爬，需用 `scripts/fanqie-rank-scraper.js`（通过详情页获取可读标题，绕过字体反爬，配合 browser-cdp 使用）。
 
 **七猫采集目标**：
 
