@@ -252,7 +252,7 @@ URL 参数：`/rank/{channel}_{type}_{cat_id}`，channel 0=女频/1=男频，typ
 | [references/genre-trends.md](references/genre-trends.md) | 查看当前题材趋势和切入建议时 |
 | [references/publishing-guide.md](references/publishing-guide.md) | 平台选择+推荐机制+数据指标+简介设计 |
 | [references/scan-output-format.md](references/scan-output-format.md) | browser-cdp采集字段定义+输出模板+文件命名规范 |
-| [scripts/cdp-utils.js](scripts/cdp-utils.js) | CDP 公共工具函数（ab/sleep/evalJSON/scrollLoad），各采集脚本共用 |
+| [scripts/cdp-utils.js](scripts/cdp-utils.js) | CDP 公共工具函数（ab/sleep/evalJSON/safeStr/scrollLoad/getArg），各采集脚本共用 |
 | [scripts/fanqie-rank-scraper.js](scripts/fanqie-rank-scraper.js) | 番茄榜单采集，通过详情页绕过字体反爬，配合 browser-cdp 使用 |
 | [scripts/qidian-rank-scraper.js](scripts/qidian-rank-scraper.js) | 起点榜单采集（畅销/月票/新书等），SSR 直出提取 |
 | [scripts/qimao-rank-scraper.js](scripts/qimao-rank-scraper.js) | 七猫榜单采集（大热/新书/完结等），tab 切换+滚动加载 |

@@ -17,7 +17,7 @@
 
 const fs = require("fs");
 const path = require("path");
-const { ab, sleep, evalJSON, scrollLoad, getArg } = require("./cdp-utils");
+const { ab, sleep, evalJSON, safeStr, scrollLoad, getArg } = require("./cdp-utils");
 
 const BROWSE_URL = "https://www.ishugui.com/browse";
 
@@ -35,7 +35,7 @@ function clickTab(port, text) {
   const js =
     "JSON.stringify((()=>{" +
     "var all=document.querySelectorAll('div,span,a,button,li');" +
-    "var el=Array.from(all).find(function(e){return e.textContent.trim()==='" + text + "'});" +
+    "var el=Array.from(all).find(function(e){return e.textContent.trim()===" + safeStr(text) + "});" +
     "if(el){el.click();return true}return false" +
     "})())";
   return evalJSON(port, js);

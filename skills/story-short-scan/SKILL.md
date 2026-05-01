@@ -75,9 +75,8 @@ metadata:
 
 > **黑岩需要登录！** 必须先在 Chrome 中手动登录 `manage.zhangwenpindu.cn`，脚本才能从 Cookie 中提取 Bearer token 调用后端 API。未登录会报错提示。
 
-- `--pages N` 控制采集页数（每页 20 条）
-- `--detail` 启用逐本详情获取（标签、简介等，速度较慢）
-- `--channel male/female` 按频道筛选
+- 黑岩专用：`--pages N`（每页 20 条）、`--detail`（逐本详情，含标签/简介，速度较慢）、`--channel male/female`
+- 点众专用：`--channel male/female/all`
 
 **文件命名**：`{平台}{类型}_{YYYYMMDD}.md`，例：`点众男频短篇_20260501.md`
 
@@ -209,7 +208,7 @@ metadata:
 | 文件 | 何时加载 |
 |------|----------|
 | [references/real-market-data.md](references/real-market-data.md) | **核心参考**：跨平台写作差异对照表、各平台简介公式速查、题材爆款公式速查表、各平台写作特征 |
-| [scripts/cdp-utils.js](scripts/cdp-utils.js) | CDP 公共工具函数（ab/sleep/evalJSON/scrollLoad），各采集脚本共用 |
+| [scripts/cdp-utils.js](scripts/cdp-utils.js) | CDP 公共工具函数（ab/sleep/evalJSON/safeStr/scrollLoad/getArg），各采集脚本共用 |
 | [scripts/dz-browse-scraper.js](scripts/dz-browse-scraper.js) | 点众短篇采集（男频/女频），文本解析+评分提取，配合 browser-cdp 使用 |
 | [scripts/heiyan-booklist-scraper.js](scripts/heiyan-booklist-scraper.js) | 黑岩书库列表采集，后端 API 模式（Bearer token），含字数/标签/价格/时间，支持 --detail 获取标签简介 |
 

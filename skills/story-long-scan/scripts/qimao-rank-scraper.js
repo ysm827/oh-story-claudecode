@@ -17,7 +17,7 @@
 
 const fs = require("fs");
 const path = require("path");
-const { ab, sleep, evalJSON, scrollLoad, getArg } = require("./cdp-utils");
+const { ab, sleep, evalJSON, safeStr, scrollLoad, getArg } = require("./cdp-utils");
 
 const RANK_URL = "https://www.qimao.com/paihang";
 
@@ -45,7 +45,7 @@ function clickTab(port, text) {
     "var all=document.querySelectorAll('div,span,a,button,li');" +
     "var el=Array.from(all).find(function(e){" +
     "var t=e.textContent.trim();" +
-    "return t==='" + text + "'||t==='" + text + "榜'" +
+    "return t===" + safeStr(text) + "||t===" + safeStr(text + "榜") +
     "});" +
     "if(el){el.click();return true}return false" +
     "})())";

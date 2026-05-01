@@ -84,7 +84,7 @@ function extractAllRanks(port) {
   return evalJSON(port, js) || [];
 }
 
-/** 从 DOM 获取书籍链接（去重，按页面顺序） */
+/** 从 DOM 获取书籍链接（去重，含标题用于匹配） */
 function extractBookUrls(port) {
   const js =
     "JSON.stringify((()=>{" +
@@ -92,7 +92,7 @@ function extractBookUrls(port) {
     "Array.from(document.querySelectorAll('a[href*=\"/book/\"]')).forEach(function(a){" +
     "var h=a.getAttribute('href')||a.href||'';" +
     "var m=h.match(/\\/book\\/(\\d+)/);" +
-    "if(m&&!seen.has(m[1])){seen.add(m[1]);urls.push({bookId:m[1],url:'https://www.ciweimao.com/book/'+m[1]})}" +
+    "if(m&&!seen.has(m[1])){seen.add(m[1]);urls.push({bookId:m[1],title:a.textContent.trim(),url:'https://www.ciweimao.com/book/'+m[1]})}" +
     "});return urls" +
     "})())";
   return evalJSON(port, js) || [];
@@ -159,10 +159,10 @@ function main() {
       ].filter(Boolean).join(" · ");
       if (meta) lines.push(`*${meta}*`);
 
-      // 匹配书籍链接（按顺序）
-      const urlIdx = entry.rank - 1;
-      if (urlIdx < urls.length) {
-        lines.push(`[作品页](${urls[urlIdx].url})`);
+      // 按标题匹配书籍链接
+      const matched = urls.find((u) => u.title === entry.title);
+      if (matched) {
+        lines.push(`[作品页](${matched.url})`);
       }
 
       lines.push("", "---", "");
