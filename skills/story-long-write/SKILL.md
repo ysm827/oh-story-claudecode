@@ -100,8 +100,8 @@ metadata:
 ```
 
 完成核心设定后，创建以下 artifact（加载 [references/artifact-protocols.md](references/artifact-protocols.md) 中对应模板）：
-- **设定/关系.md**：角色关系映射（参考 character-design.md §四种关系类型）
-- **设定/题材定位.md**：题材核心梗三分法+对标分析（参考 genre-frameworks-unified.md §核心梗解析）。对标分析表保留 2-3 行摘要，详细数据见 `对标/` 目录
+- **设定/关系.md**：角色关系映射（参考 character-design.md「四种关系类型」）
+- **设定/题材定位.md**：题材核心梗三分法+对标分析（参考 genre-frameworks-unified.md「核心梗解析」）。对标分析表保留 2-3 行摘要，详细数据见 `对标/` 目录
 
 ---
 
@@ -149,8 +149,8 @@ metadata:
 - 11-30 章：稳定节奏，开始铺设中长线伏笔
 
 大纲完成后，创建以下 artifact（加载 [references/artifact-protocols.md](references/artifact-protocols.md) 中对应模板）：
-- **大纲/卷纲_第X卷.md**：每卷的爽点节奏+情绪弧线+人物弧线+伏笔+反转（参考 outline-arrangement.md §大纲三层结构法 + emotional-arc-design.md §六种弧线速查 + reversal-toolkit.md §五种反转类型）
-- **追踪/伏笔.md** + **追踪/时间线.md**：伏笔状态表+故事时间线（参考 advanced-plot-techniques.md §连续性追踪）
+- **大纲/卷纲_第X卷.md**：每卷的爽点节奏+情绪弧线+人物弧线+伏笔+反转（参考 outline-arrangement.md「大纲三层结构法」 + emotional-arc-design.md「六种弧线速查」 + reversal-toolkit.md「五种反转类型」）
+- **追踪/伏笔.md** + **追踪/时间线.md**：伏笔状态表+故事时间线（参考 advanced-plot-techniques.md「连续性追踪」）
 
 前 3 章细纲额外加载 [references/opening-design.md](references/opening-design.md)（黄金三章法则+六大标准）。
 
