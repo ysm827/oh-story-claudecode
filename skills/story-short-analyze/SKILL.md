@@ -50,8 +50,9 @@ metadata:
 按 output-templates.md 中的模板输出：
 
 - **Phase 2**：全篇结构拆解。按 [output-templates.md Phase 2](references/output-templates.md) 输出结构划分和基本信息。
-- **Phase 3**：情绪曲线分析。按 [Phase 3](references/output-templates.md) 输出情绪节点和曲线特征。
-- **Phase 4**：反转设计分析。按 [Phase 4](references/output-templates.md) 输出反转类型、机制、时机。
+- **Phase 2.5**：人设速写。按 [Phase 2.5](references/output-templates.md) 分析主角 + 至少 2 个配角的核心矛盾、性格弧线、功能定位。
+- **Phase 3**：情绪曲线分析。按 [Phase 3](references/output-templates.md) 输出情绪节点和曲线特征，**每个节点同时标注该段的钩子类型**。
+- **Phase 4**：反转设计分析。按 [Phase 4](references/output-templates.md) 输出反转类型、机制、时机。**包含前置反转检查**：是否有在故事时间线之前就已存在的谎言/误判。
 - **Phase 5**：开头与结尾分析。按 [Phase 5](references/output-templates.md) 拆解首尾。
 - **Phase 6**：输出拆文报告。按 [Phase 6](references/output-templates.md) 模板输出完整报告。
 
